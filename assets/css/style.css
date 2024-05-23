@@ -11,52 +11,91 @@ html{
 #main{
 
 }
+
+/* Begin: Header */
+
 #header{
     height: 46px;
     background-color: #000;
 }
-#nav{
 
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header #nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
 }
 
 #nav li{
-    display: inline-block;
     position: relative;
 }
 
-
 #nav > li > a{
     color: #fff;
+    text-transform: uppercase;
 }
 
 #nav li a{
-    text-decoration: none;
+    text-decoration:  none;
     line-height: 46px;
     padding: 0 24px;
+    display: inline-block;
+
 }
 
-#nav>li:hover>a{
-    background-color: #ccc;
+#nav li:hover .subnav{
+    display: block;
 }
-#nav li:hover a{
-    display: inline-block;
+
+#nav .subnav li:hover,
+#nav > li:hover > a{
+    background-color: #ccc;
     color: #000;
 }
 
-#nav .subnav {
-    /* display: none; */
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#nav .subnav{
+    display: none;
     position: absolute;
     background-color: #fff;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    top: 100%;
+    left: 0;
 }
 
 #nav .subnav a{
     color: #000;
-} 
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+/* End: Header */
 
 #slider{
     min-height: 500px;
-    background-color: #333;
-    display: block;
+    /* background-color: #333; */
 }
 #content{
 
